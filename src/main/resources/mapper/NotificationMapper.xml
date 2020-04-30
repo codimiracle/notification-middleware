@@ -1,0 +1,16 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.codimiracle.web.notification.middleware.mapper.NotificationMapper">
+    <resultMap id="PersistentResultMap" type="com.codimiracle.web.notification.middleware.pojo.po.Notification">
+        <id column="id" property="id"/>
+        <result column="sender_id" property="senderId"/>
+        <result column="receiver_id" property="receiverId"/>
+        <result column="created_at" property="createdAt"/>
+        <result column="updated_at" property="updatedAt"/>
+        <result column="type" property="type"/>
+        <result column="payload" property="payload"/>
+        <result column="read" property="read"/>
+    </resultMap>
+
+</mapper>
